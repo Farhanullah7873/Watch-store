@@ -27,7 +27,7 @@ height: 640px;
 background-size: cover;
 background-position:center;
 
-    background-image: url("/Assets/images/header-bg.png");
+    background-image: url("images/header-bg.png");
 
 width: 100%;
 
