@@ -1,0 +1,295 @@
+      /* Initial transparent navbar background */
+      .navbar-bg {
+
+        background-color: transparent;
+        transition: background-color 1s ease;
+        /* Smooth transition for color change */
+    }
+
+    /* Black background when scrolled */
+    .bg-black {
+        background-color: black !important;
+    }
+    .nav-item a{
+        color: whitesmoke;
+        }
+        .nav-item a:hover{
+            color: white;
+        }
+        .nav-link:focus{
+          color:black;
+        }
+
+/* main area */
+.banner1{
+  display: flex;
+height: 640px;
+background-size: cover;
+background-position:center;
+
+    background-image: url("/Assets/images/header-bg.png");
+
+width: 100%;
+
+justify-content: center center;
+align-items: center;
+position: relative;
+flex-direction: column;
+
+}
+
+
+/* banner-text-area  */
+.banner-text{
+    color: whitesmoke;
+    text-align: center;
+margin-top: 120px;
+}
+.buy-now-btn{
+
+    
+        border: none;
+        padding:5px 50px 5PX 50PX;
+        border-radius: 20px;
+    }
+
+ .buy-now-btn:hover{
+background-color: transparent;
+color: white;
+border: 1px solid white;
+}
+.buy-now-btn a{
+    color: black;
+    text-decoration: none;
+}
+/* navbar  */
+/* Initial transparent navbar background */
+.navbar-bg {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+/* Black background when scrolled */
+.bg-black {
+    background-color: black !important;
+}
+
+/* Force black background on mobile screens */
+@media (max-width: 992px) { /* Bootstrap's breakpoint for large devices */
+    .navbar-bg {
+        background-color: black !important;
+    }
+}
+/* toggler button  */
+/* Initial transparent navbar background */
+.navbar-bg {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+/* Black background when scrolled */
+.bg-black {
+    background-color: black !important;
+}
+/* 
+/* Force black background on mobile screens */
+@media (max-width: 992px) {
+    .navbar-bg {
+        background-color: black !important;
+    }
+
+    /* Make toggler button icon white */
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5); /* Change the border color to white with transparency */
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        /* This is an SVG path for the white-colored icon */
+    }
+} 
+/* btn-get-start  */
+.btn-get-start{
+background-color: black;
+    border: none;
+ 
+    color: white;
+    padding: 5px 20px 5px 10px;
+    margin-bottom: 20px;
+    
+}
+.btn-get-start:hover a{
+color: white;
+
+
+    text-decoration: none;
+}
+.btn-get-start a{
+    color:blue;
+text-decoration: none;
+
+}
+.btn-get-start {
+    border: 1px solid black;
+    padding: 5px 20px 5px 10px;
+    border-radius: 20px;
+    background-color:black;
+    color: rgb(240, 240, 240);
+    margin-bottom: 20PX;
+    margin-top: 10PX;
+}
+
+/* performance-area  */
+.high-performance i{
+    font-size: 30px;
+    color: blue;
+    padding-bottom: 6px;
+}
+
+/* .btn-get-details  */
+
+.btn-get-details{
+  
+    text-decoration: none;
+    padding: 5px 20px 5px 30px ; 
+    border-radius: 20px;
+    color: white;
+background-image: linear-gradient(to left, rgb(68, 203, 236),blue);
+
+ 
+}
+.btn-get-details:hover{
+   background-image:none;
+   border:1px solid blue;
+   color: blue;
+}
+/* services  */
+.single-service {
+cursor: pointer;
+justify-content: center;
+align-items: center;
+padding: 5px 10px 5px 10px;
+/* width: 250px; */
+margin: 0px 20px 20px;
+height: 230px;
+background-color:  rgb(246, 248, 248);;
+    color: black;
+    
+}
+.single-service i{
+    color: black;
+}
+.single-service:hover{
+
+    box-shadow: 5px 10px 20px 1px rgb(175, 206, 202);}
+    .single-service:hover h5 {
+        color: blue;
+    }
+    .single-service:hover i{
+        color: blue;
+    }
+    /* watch-price-area  */
+    .watch-price-area{
+        width:auto;
+     
+        justify-content: center;
+        align-items: center;
+background-color: white;
+color: black;
+margin-bottom: 20px;
+padding-bottom: 20px;
+    }
+    .watch-price-area:hover{
+        transition: transform 0.1s;
+        transform: scale(1.02);
+    }
+    .watch-price-pic img{
+padding: 20px;
+    }
+    .watch-price-rates{
+        padding-bottom: 20px;
+        margin-top: 20px;
+        background-color: whitesmoke;
+    }
+    /* btn-pre-order  */
+    .btn-pre-order{
+      
+        text-decoration: none;
+padding: 5px 20px 5px 20px;
+border-radius: 15px;
+background-color: black;
+color: white;
+    }
+    /* btn-pre-order hover */
+   .watch-price-area:hover .btn-pre-order{
+background-image: linear-gradient(to right, rgb(31, 224, 208),rgb(26, 174, 211));
+    }
+/* FAQ STYLING  */
+    .faq-bg{
+        background-image: url("/Assets/images/faq-bg.jpg");
+       background-repeat: no-repeat;
+       background-position: top center;
+           }
+           /* btn-accordian  */
+           .accordian-btn{
+            color: white;
+            background-image: linear-gradient(to left, rgb(31, 224, 208),rgb(47, 87, 219));
+cursor: pointer;
+           }
+           /* footer  */
+           footer{padding-top: 30px;
+            height: auto;
+         padding-bottom: 40px;
+           }
+   
+         .footer-email{
+            margin-top: 20px;
+         }
+           .footer-email-input{
+          margin: 2px 0px 1px 1px;
+          color: white;
+            border: none;
+            padding: 4px 0px 4px 4px;
+            width: 74%;
+            padding-left: 10px;background-color: black;
+           }
+           .footer-email-icon{
+ 
+            padding:7px 15px 7px 6px;
+            color: white;
+            text-align: center;
+
+           }
+           .footer-email-btn{
+            margin-bottom: 10px;
+            background-image: linear-gradient(to left, rgb(31, 224, 208),rgb(47, 87, 219));
+
+           }
+           .footer-social-links i{
+            color: gray;
+       padding: 10px;}
+       .footer-social-links i:hover{
+        color: blue;
+       }
+       /* height: 30px;
+       margin: 2px auto 0;
+       display: block;
+       width: 30px;
+       background: transparent;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       border-radius: 50%;} */
+/* .mouse-wheel{
+    animation-name: wheel-up-down;
+
+    animation: 1s ease infinite wheel-up-down;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+   
+  } */
