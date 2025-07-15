@@ -15,3 +15,7 @@ CSS3
 Bootstrap 5
 📃 License
 This project is open source — free to use and modify.
+## 🤝 **Connect**
+
+* [GitHub](https://farhanullah7873.github.io/Watch-store/index.html)
+* [LinkedIn](https://www.linkedin.com/in/farhan-ullah-05a5b2314/e)
