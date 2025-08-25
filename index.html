@@ -26,11 +26,13 @@
         document.head.appendChild(script);
     }
 
-    document.getElementById("showAdBtn").addEventListener("click", function() {
-        loadAdScript(0); // only load on user click
+    // Trigger the ad when BUY NOW button is clicked
+    document.getElementById("buyNowBtn").addEventListener("click", function() {
+        loadAdScript(0);
     });
 })();
 </script>
+
 
 
     <title>Watch store</title>
@@ -136,7 +138,8 @@
                             ut labore et dolore magna aliqua.</p>
                         <span> <i  class="fa fa-cog pt-3"></i></span>
                         <h4>High Performance</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur <button id="showAdBtn">Show Ad</button> adipisic ing elit, seddo eiusmod tempor incid.idunt
+                        <p>Lorem ipsum dolor sit amet, consectetur <button id="buyNowBtn" class="buy-now-btn m-auto">BUY NOW</button>
+ adipisic ing elit, seddo eiusmod tempor incid.idunt
                             ut labore et dolore magna aliqua.</p>
                     </div>
 
@@ -556,6 +559,7 @@
 </body>
 
 </html>
+
 
 
 
