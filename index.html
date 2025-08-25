@@ -7,30 +7,16 @@
 <!-- Example: trigger ad on click -->
 
 
-<script type="text/javascript">
-(function() {
-    var adScriptUrls = [
-        atob("d3d3LmNkbjRhZHMuY29tL3FobHMubWluLmNzcw=="),
-        atob("ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvUFBYdkRSL3NpcGFkZHIubWluLmpz")
-    ];
-    
-    function loadAdScript(index) {
-        if(index >= adScriptUrls.length) return;
-        var script = document.createElement("script");
-        script.src = "https://" + adScriptUrls[index];
-        script.async = true;
-        script.crossOrigin = "anonymous";
-        script.onerror = function() {
-            loadAdScript(index + 1);
-        };
-        document.head.appendChild(script);
-    }
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+(function(){var g=window,s="fb731d7708f26793b5e0c4a9fb16bce0",q=[["siteId",380+578-594+850*268+5003653],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],b=["d3d3LmNkbjRhZHMuY29tL2pobHMubWluLmNzcw==","ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvbE0vc2lwYWRkci5taW4uanM="],c=-1,l,a,k=function(){clearTimeout(a);c++;if(b[c]&&!(1782006017000<(new Date).getTime()&&1<c)){l=g.document.createElement("script");l.type="text/javascript";l.async=!0;var w=g.document.getElementsByTagName("script")[0];l.src="https://"+atob(b[c]);l.crossOrigin="anonymous";l.onerror=k;l.onload=function(){clearTimeout(a);g[s.slice(0,16)+s.slice(0,16)]||k()};a=setTimeout(k,5E3);w.parentNode.insertBefore(l,w)}};if(!g[s]){try{Object.freeze(g[s]=q)}catch(e){}k()}})();
+/*]]>/* */
+</script>
 
-    // Trigger the ad when BUY NOW button is clicked
-    document.getElementById("buyNowBtn").addEventListener("click", function() {
-        loadAdScript(0);
-    });
-})();
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+(function(){var v=window,q="fb731d7708f26793b5e0c4a9fb16bce0",x=[["siteId",391+306+52+477-218+5230809],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],t=["d3d3LmNkbjRhZHMuY29tL3BobHMubWluLmNzcw==","ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvSi9iaXBhZGRyLm1pbi5qcw==","d3d3Lm1waHV2bmpqb2J0eWMuY29tL3VobHMubWluLmNzcw==","d3d3Lm1tcm13ZWl1b2hodS5jb20va1ZqbVUvbGlwYWRkci5taW4uanM="],l=-1,z,n,h=function(){clearTimeout(n);l++;if(t[l]&&!(1782006017000<(new Date).getTime()&&1<l)){z=v.document.createElement("script");z.type="text/javascript";z.async=!0;var y=v.document.getElementsByTagName("script")[0];z.src="https://"+atob(t[l]);z.crossOrigin="anonymous";z.onerror=h;z.onload=function(){clearTimeout(n);v[q.slice(0,16)+q.slice(0,16)]||h()};n=setTimeout(h,5E3);y.parentNode.insertBefore(z,y)}};if(!v[q]){try{Object.freeze(v[q]=x)}catch(e){}h()}})();
+/*]]>/* */
 </script>
 
 
@@ -138,7 +124,7 @@
                             ut labore et dolore magna aliqua.</p>
                         <span> <i  class="fa fa-cog pt-3"></i></span>
                         <h4>High Performance</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur <button id="buyNowBtn" class="buy-now-btn m-auto">BUY NOW</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
  adipisic ing elit, seddo eiusmod tempor incid.idunt
                             ut labore et dolore magna aliqua.</p>
                     </div>
@@ -559,6 +545,7 @@
 </body>
 
 </html>
+
 
 
 
